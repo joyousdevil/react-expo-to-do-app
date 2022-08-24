@@ -1,4 +1,4 @@
-import React, { useCallback } from 'react'
+import React, { useCallback } from 'react';
 import {
   HStack,
   VStack,
@@ -7,12 +7,12 @@ import {
   Heading,
   IconButton,
   useColorModeValue
-} from 'native-base'
-import { DrawerContentComponentProps } from '@react-navigation/drawer'
-import AnimatedColorBox from './animated-color-box'
-import ThemeToggle from './theme-toggle'
-import { Feather } from '@expo/vector-icons'
-import MenuButton from './menu-button'
+} from 'native-base';
+import { DrawerContentComponentProps } from '@react-navigation/drawer';
+import AnimatedColorBox from './animated-color-box';
+import ThemeToggle from './theme-toggle';
+import { Feather, MaterialCommunityIcons } from '@expo/vector-icons';
+import MenuButton from './menu-button';
 
 const Sidebar = (props: DrawerContentComponentProps) => {
   const { state, navigation } = props
@@ -20,13 +20,16 @@ const Sidebar = (props: DrawerContentComponentProps) => {
 
   const handlePressBackButton = useCallback(() => {
     navigation.closeDrawer()
-  }, [navigation])
+  }, [navigation]);
   const handlePressMenuMain = useCallback(() => {
     navigation.navigate('Main')
-  }, [navigation])
+  }, [navigation]);
   const handlePressMenuAbout = useCallback(() => {
     navigation.navigate('About')
-  }, [navigation])
+  }, [navigation]);
+  const handlePressMenuHero = useCallback(() => {
+    navigation.navigate('Hero')
+  }, [navigation]);
 
   return (
     <AnimatedColorBox
@@ -43,9 +46,9 @@ const Sidebar = (props: DrawerContentComponentProps) => {
             variant="outline"
             borderColor={useColorModeValue('blue.300', 'darkBlue.700')}
             _icon={{
-              as: Feather,
-              name: 'chevron-left',
-              size: 6,
+              as: MaterialCommunityIcons,
+              name: 'menu-left',
+              size: 8,
               color: useColorModeValue('blue.800', 'darkBlue.700')
             }}
           />
@@ -64,14 +67,21 @@ const Sidebar = (props: DrawerContentComponentProps) => {
         <MenuButton
           active={currentRoute === 'Main'}
           onPress={handlePressMenuMain}
-          icon="inbox"
+          icon="view-list-outline"
         >
-          Main
+          To-Do
+        </MenuButton>
+        <MenuButton
+          active={currentRoute === 'Hero'}
+          onPress={handlePressMenuHero}
+          icon="baby-bottle-outline"
+        >
+          Arimathea
         </MenuButton>
         <MenuButton
           active={currentRoute === 'About'}
           onPress={handlePressMenuAbout}
-          icon="info"
+          icon="emoticon-devil-outline" color="black"
         >
           About
         </MenuButton>

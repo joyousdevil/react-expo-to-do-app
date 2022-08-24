@@ -1,6 +1,6 @@
 import React from 'react'
 import { Button, Icon, IButtonProps } from 'native-base'
-import { Feather } from '@expo/vector-icons'
+import { Feather, MaterialCommunityIcons } from '@expo/vector-icons'
 
 interface Props extends IButtonProps {
   active: boolean
@@ -33,7 +33,7 @@ const MenuButton = ({ active, icon, children, ...props }: Props) => {
       bg={active ? undefined : 'transparent'}
       variant="solid"
       justifyContent="flex-start"
-      leftIcon={<Icon as={Feather} name={icon} size="sm" opacity={0.5} />}
+      leftIcon={<Icon as={MaterialCommunityIcons} name={icon} size="sm" opacity={0.5} />}
       {...props}
     >
       {children}

@@ -10,25 +10,25 @@ import NavBar from '../components/navbar'
 const initialData = [
   {
     id: shortid.generate(),
-    subject: 'This is a to-do list',
+    subject: 'Tap on the top left to navigate',
     done: false,
     wrap: true
   },
   {
     id: shortid.generate(),
-    subject: 'Click on the top left to navigate',
-    done: false,
-    wrap: true
-  },
-  {
-    id: shortid.generate(),
-    subject: 'It has light mode and dark mode',
+    subject: 'Try out dark mode',
     done: false,
     wrap: true
   },
   {
     id: shortid.generate(),
     subject: 'Swipe left on a task to delete it',
+    done: false,
+    wrap: true
+  },
+  {
+    id: shortid.generate(),
+    subject: 'Tap text to edit or add your own',
     done: false,
     wrap: true
   }
@@ -91,7 +91,7 @@ export default function MainScreen() {
         bg={useColorModeValue('warmGray.50', 'primary.900')}
         mt="-20px"
         borderTopLeftRadius="20px"
-        borderTopRightRadius="20px"
+//        borderTopRightRadius="20px"
         pt="20px"
       >
         <TaskList

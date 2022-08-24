@@ -1,9 +1,5 @@
 # Smoothly Animated ToDo App built with React Native
 
-![Thumbnail](./doc/thumb.jpg)
-
-![demo](./doc/checkbox.gif)
-
 ## Stack
 
 - [React Native](https://reactnative.dev/) - ReactJS-based framework that can use native platform capabilities
@@ -35,7 +31,3 @@ $PROJECT_ROOT
 
 This project can be run from the Expo client app.
 
-```sh
-yarn
-yarn start
-```

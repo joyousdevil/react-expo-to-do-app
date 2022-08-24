@@ -32,7 +32,7 @@ const AboutScreen = () => {
       </Masthead>
       <ScrollView
         borderTopLeftRadius="20px"
-        borderTopRightRadius="20px"
+//        borderTopRightRadius="20px"
         bg={useColorModeValue('warmGray.50', 'primary.900')}
         mt="-20px"
         pt="30px"
