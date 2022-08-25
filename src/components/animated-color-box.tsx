@@ -1,14 +1,14 @@
-import React, { useEffect } from 'react'
-import { Box, useToken } from 'native-base'
-import usePrevious from '../utils/use-previous'
+import React, { useEffect } from 'react';
+import { Box, useToken } from 'native-base';
+import usePrevious from '../utils/use-previous';
 import Animated, {
   useSharedValue,
   useAnimatedStyle,
   withTiming,
   interpolateColor
-} from 'react-native-reanimated'
+} from 'react-native-reanimated';
 
-const AnimatedBox = Animated.createAnimatedComponent(Box)
+const AnimatedBox = Animated.createAnimatedComponent(Box);
 
 const AnimatedColorBox = ({ bg, ...props }: any) => {
   const hexBg = useToken('colors', bg)
@@ -32,4 +32,4 @@ const AnimatedColorBox = ({ bg, ...props }: any) => {
   return <AnimatedBox {...props} style={animatedStyles} />
 }
 
-export default AnimatedColorBox
+export default AnimatedColorBox;
