@@ -7,7 +7,7 @@ import AboutScreen from './screens/about-screen';
 import HeroScreen from './screens/hero-screen'
 import Sidebar from './components/sidebar';
 
-const Drawer = createDrawerNavigator()
+const Drawer = createDrawerNavigator();
 
 const App = () => {
   return (
@@ -27,4 +27,4 @@ const App = () => {
   )
 };
 
-export default App
+export default App;
