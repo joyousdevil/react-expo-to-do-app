@@ -1,5 +1,5 @@
-import React, { useEffect, memo } from 'react'
-import { Pressable, Text, HStack, Box } from 'native-base'
+import React, { useEffect, memo } from 'react';
+import { Pressable, Text, HStack, Box } from 'native-base';
 import Animated, {
   Easing,
   useSharedValue,
@@ -8,7 +8,7 @@ import Animated, {
   withSequence,
   withDelay,
   interpolateColor
-} from 'react-native-reanimated'
+} from 'react-native-reanimated';
 
 interface Props {
   strikethrough: boolean
@@ -18,9 +18,9 @@ interface Props {
   children?: React.ReactNode
 }
 
-const AnimatedBox = Animated.createAnimatedComponent(Box)
-const AnimatedHStack = Animated.createAnimatedComponent(HStack)
-const AnimatedText = Animated.createAnimatedComponent(Text)
+const AnimatedBox = Animated.createAnimatedComponent(Box);
+const AnimatedHStack = Animated.createAnimatedComponent(HStack);
+const AnimatedText = Animated.createAnimatedComponent(Text);
 
 const AnimatedTaskLabel = memo((props: Props) => {
   const { strikethrough, textColor, inactiveTextColor, onPress, children } =
@@ -98,4 +98,4 @@ const AnimatedTaskLabel = memo((props: Props) => {
   )
 })
 
-export default AnimatedTaskLabel
+export default AnimatedTaskLabel;
