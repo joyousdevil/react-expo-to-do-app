@@ -1,11 +1,11 @@
-import React, { useCallback, useState } from 'react'
-import { Icon, VStack, useColorModeValue, Fab } from 'native-base'
-import { AntDesign } from '@expo/vector-icons'
-import AnimatedColorBox from '../components/animated-color-box'
-import TaskList from '../components/task-list'
-import shortid from 'shortid'
-import Masthead from '../components/masthead'
-import NavBar from '../components/navbar'
+import React, { useCallback, useState } from 'react';
+import { Icon, VStack, useColorModeValue, Fab } from 'native-base';
+import { AntDesign } from '@expo/vector-icons';
+import AnimatedColorBox from '../components/animated-color-box';
+import TaskList from '../components/task-list';
+import shortid from 'shortid';
+import Masthead from '../components/masthead';
+import NavBar from '../components/navbar';
 
 const initialData = [
   {

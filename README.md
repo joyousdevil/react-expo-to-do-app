@@ -33,7 +33,7 @@ An animated to do app that was created by following along craftzdog tutorial.
     - Mount/unmount animations, like `Framer Motion`.
     - Variant & keyframe animations.
     - Sequence animations.
-    - Loop & repeate animations.
+    - Loop & repeat animations.
     - Web support.
     - Expo support.
     - Next.js support.

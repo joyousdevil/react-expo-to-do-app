@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import {
   ScrollView,
   Box,
@@ -7,14 +7,14 @@ import {
   Icon,
   Image,
   useColorModeValue
-} from 'native-base'
-import { Feather } from '@expo/vector-icons'
-import AnimatedColorBox from '../components/animated-color-box'
-import Navbar from '../components/navbar'
-import MastHead from '../components/masthead'
-import LinkButton from '../components/link-button'
-import Masthead from '../components/masthead'
-import { TextInput } from 'react-native-gesture-handler'
+} from 'native-base';
+import { Feather } from '@expo/vector-icons';
+import AnimatedColorBox from '../components/animated-color-box';
+import Navbar from '../components/navbar';
+import MastHead from '../components/masthead';
+import LinkButton from '../components/link-button';
+import Masthead from '../components/masthead';
+import { TextInput } from 'react-native-gesture-handler';
 
 const AboutScreen = () => {
   return (
@@ -102,4 +102,4 @@ const AboutScreen = () => {
   )
 }
 
-export default AboutScreen
+export default AboutScreen;
