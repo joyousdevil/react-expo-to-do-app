@@ -61,7 +61,7 @@ const initialData = [
     subject: 'Baby grooming kit',
     done: false,
     wrap: true
-  }
+  },
 ]
 
 export default function MainScreen() {
