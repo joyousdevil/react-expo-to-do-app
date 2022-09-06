@@ -110,7 +110,7 @@ export default function MainScreen() {
       w="full"
     >
       <Masthead
-        title="Arimathea's Registry"
+        title="Nolan's Registry"
         image={require('../assets/baby-masthead.jpg')}
       >
         <NavBar />

@@ -76,7 +76,7 @@ const Sidebar = (props: DrawerContentComponentProps) => {
           onPress={handlePressMenuHero}
           icon="baby-bottle-outline"
         >
-          Arimathea
+          Nolan Cole
         </MenuButton>
         <MenuButton
           active={currentRoute === 'About'}
