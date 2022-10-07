@@ -27,9 +27,6 @@ const Sidebar = (props: DrawerContentComponentProps) => {
   const handlePressMenuAbout = useCallback(() => {
     navigation.navigate('About')
   }, [navigation]);
-  const handlePressMenuHero = useCallback(() => {
-    navigation.navigate('Hero')
-  }, [navigation]);
 
   return (
     <AnimatedColorBox
@@ -54,7 +51,7 @@ const Sidebar = (props: DrawerContentComponentProps) => {
           />
         </HStack>
         <Avatar
-          source={require('../assets/profile-image.jpg')}
+          source={require('../assets/profile-pic-male-guitar.png')}
           size="xl"
           borderRadius={100}
           mb={6}
@@ -70,13 +67,6 @@ const Sidebar = (props: DrawerContentComponentProps) => {
           icon="view-list-outline"
         >
           To-Do
-        </MenuButton>
-        <MenuButton
-          active={currentRoute === 'Hero'}
-          onPress={handlePressMenuHero}
-          icon="baby-bottle-outline"
-        >
-          Nolan Cole
         </MenuButton>
         <MenuButton
           active={currentRoute === 'About'}
