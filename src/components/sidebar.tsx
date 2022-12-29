@@ -51,7 +51,7 @@ const Sidebar = (props: DrawerContentComponentProps) => {
           />
         </HStack>
         <Avatar
-          source={require('../assets/profile-pic-male-guitar.png')}
+          source={require('../assets/profile-pic-female.png')}
           size="xl"
           borderRadius={100}
           mb={6}
@@ -59,7 +59,7 @@ const Sidebar = (props: DrawerContentComponentProps) => {
           borderWidth={3}
         />
         <Heading mb={4} size="xl">
-          Vincent Camacho
+          Guest
         </Heading>
         <MenuButton
           active={currentRoute === 'Main'}

@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React, { useCallback, useState } from 'react';
 import { Icon, VStack, useColorModeValue, Fab } from 'native-base';
 import { AntDesign } from '@expo/vector-icons';
@@ -80,7 +81,7 @@ export default function MainScreen() {
       w="full"
     >
       <Masthead
-        title="Good morning, Vincent!"
+        title="Good morning, Guest!"
         image={require('../assets/masthead.jpg')}
       >
         <NavBar />

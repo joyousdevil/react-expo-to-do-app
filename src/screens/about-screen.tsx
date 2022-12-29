@@ -9,6 +9,7 @@ import {
   useColorModeValue
 } from 'native-base';
 import { Feather } from '@expo/vector-icons';
+import { FontAwesome5 } from '@expo/vector-icons';
 import AnimatedColorBox from '../components/animated-color-box';
 import Navbar from '../components/navbar';
 import MastHead from '../components/masthead';
@@ -67,12 +68,12 @@ const AboutScreen = () => {
             colorScheme={useColorModeValue('blue', 'darkBlue')}
             size="lg"
             borderRadius="full"
-            href="https://jnvphoto.myportfolio.com/"
+            href="https://vinceportfolio.vercel.app/"
             leftIcon={
-              <Icon as={Feather} name="film" size="sm" opacity={0.5} />
+              <Icon as={FontAwesome5} name="rainbow" size="sm" opacity={0.5} />
             }
           >
-            Photography
+            Portfolio
           </LinkButton>
           <LinkButton
             colorScheme="green"
